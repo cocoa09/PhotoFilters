@@ -4,9 +4,13 @@ Display
     BoxLayout:
         orientation:"vertical"
         TextInput:
+            id:v
+        Button:
+            text: "load image"
+            on_press: root.load_img()
         Image:
-            id: image
-            source:""
+            id: img
+            source: ""
             size_hint:1,6
         GridLayout:
             orientation: "lr-tb"
@@ -18,6 +22,7 @@ Display
                 text:"black and white"
             Button:
                 text:"pointillism"
+                on_press: root.pointillism("test")
             Button:
                 text:"line drawing"
             Button:
