@@ -4,7 +4,7 @@ Display
     BoxLayout:
         orientation:"vertical"
         TextInput:
-            id:v
+            id: v
         Button:
             text: "load image"
             on_press: root.load_img()
@@ -20,13 +20,15 @@ Display
                 text:"invert"
             Button:
                 text:"black and white"
+                on_press: root.black and white
             Button:
                 text:"pointillism"
-                on_press: root.pointillism("test")
+                on_press: root.pointillism()
             Button:
                 text:"line drawing"
+                on_press: root.line_drawing()
             Button:
                 text:"distance halo"
             Button:
-                text:"pix"
+                text:"pixelate"
 
